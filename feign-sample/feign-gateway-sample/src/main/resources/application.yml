@@ -1,0 +1,30 @@
+spring:
+  cloud:
+    gateway:
+      enabled: true
+      discovery:
+        locator:
+          lower-case-service-id: true
+      # Add the route of microservice.
+#      routes:
+#        - id:
+#          uri:
+#          predicates:
+#            - Path=
+#          filters:
+#            - StripPrefix=1
+#        - id:
+#          uri:
+#          predicates:
+#            - Path=
+#          filters:
+#            - StripPrefix=1
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+# Endpoints configuration for spring-actuator
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

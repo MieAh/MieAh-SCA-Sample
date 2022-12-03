@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: feign-gateway
+  cloud:
+    # Implement the configuration of Nacos service discovery.
+    nacos:
+      server-addr: 127.0.0.1:8848
+      discovery:
+        username: nacos
+        password: nacos

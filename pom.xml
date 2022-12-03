@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.mieah.sample</groupId>
+	<artifactId>MieAh-SCA-Sample</artifactId>
+	<version>${sample.version}</version>
+	<packaging>pom</packaging>
+
+	<developers>
+		<developer>
+			<name>MieAh</name>
+			<email>1415045335@qq.com</email>
+			<organization>TopView</organization>
+			<url>https://github.com/MieAh</url>
+		</developer>
+	</developers>
+
+	<modules>
+		<module>dubbo-sample</module>
+		<module>feign-sample</module>
+	</modules>
+
+	<properties>
+		<sample.version>2021.0.4.0</sample.version>
+		<spring-boot-dependencies.version>2.6.11</spring-boot-dependencies.version>
+		<spring-cloud-dependencies.version>2021.0.4</spring-cloud-dependencies.version>
+		<spring-cloud-alibaba-dependencies.version>2021.0.4.0-SNAPSHOT</spring-cloud-alibaba-dependencies.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.alibaba.cloud</groupId>
+				<artifactId>spring-cloud-alibaba-dependencies</artifactId>
+				<version>${spring-cloud-alibaba-dependencies.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud-dependencies.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-dependencies</artifactId>
+				<version>${spring-boot-dependencies.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>

@@ -1,2 +1,2 @@
 # MieAh-SCA-Sample
-本项目是我对于微服务架构项目的一些理解，我将会用严格的规范来进行构建基于SpringCloudAlibaba的微服务项目示例，同时我会将我认为不错的想法给加入进来。
+This project is for template reference only, and is written according to the version adaptation given by SCA official.
